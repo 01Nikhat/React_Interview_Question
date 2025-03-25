@@ -13,7 +13,7 @@ export default function GrandChild() {
   return (
     <div>
       <input type="text" value={inputval} onChange={(e)=>setInputVal(e.target.value)}  />
-      <button onClick ={ ()=>setMessage(inputval)}> Save Update Message</button>
+      <button onClick ={ handleButton}> Save Update Message</button>
       {isUpdated ? <span>{message}</span> : " "}
     </div>
   )
