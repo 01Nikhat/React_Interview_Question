@@ -1,11 +1,13 @@
 
 import './App.css'
-import UseState from './React-Hooks/useState'
-import UseProp from './React-Hooks/useProp';
-import GrandParent from './React-Hooks/useContext/GrandParent';
-import UseRef from './React-Hooks/UseRef';
-import Parent from './Child-Parent-Pass-Data/Parent';
-import Home from './React-Router/Router/Home';
+// import UseState from './components/React-Hooks/useState'
+// import UseProp from './components/React-Hooks/useProp';
+// import GrandParent from './components/React-Hooks/useContext/GrandParent';
+// import UseRef from './components/React-Hooks/UseRef';
+// import Parent from './components/Child-Parent-Pass-Data/Parent';
+// import Home from './components/React-Router/Dynamic-Router/Home';
+import MyComponent from './components/customComponents/MyComponent';
+
 
 function App() {
  const name = "nikhat";
@@ -17,7 +19,9 @@ function App() {
       {/*  parent to child data pass <GrandParent /> */}
       {/* useRef use  <UseRef />  */}
       {/* child to parent data pass   <Parent />  */}
-      <Home />
+      {/*  For Simple Router <Home />  */}
+      {/* Dynamic Router   <Home /> */}
+      <MyComponent />
     </>
   )
 }
