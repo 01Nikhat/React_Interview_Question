@@ -7,10 +7,14 @@ import './App.css'
 // import Parent from './components/Child-Parent-Pass-Data/Parent';
 // import Home from './components/React-Router/Dynamic-Router/Home';
 import MyComponent from './components/customComponents/MyComponent';
+import LazyHome from './components/Lazy-Loading/LazyHome';
+import { BrowserRouter } from 'react-router-dom';
+import TodoHome from './components/machine-coding/Todo-App/TodoHome';
+import HomeTodo from './components/machine-coding/Todo-Practice/HomeTodo';
 
 
 function App() {
- const name = "nikhat";
+ //const name = "nikhat";
 
   return (
     <>
@@ -21,7 +25,14 @@ function App() {
       {/* child to parent data pass   <Parent />  */}
       {/*  For Simple Router <Home />  */}
       {/* Dynamic Router   <Home /> */}
-      <MyComponent />
+     {/* custom components <MyComponent /> */}
+     {/* Lazy Loading  <BrowserRouter>
+        <LazyHome />
+     </BrowserRouter>
+      */   }
+      {/*  <TodoHome /> */}
+      <HomeTodo />
+
     </>
   )
 }
