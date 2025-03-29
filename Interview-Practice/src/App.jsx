@@ -10,7 +10,9 @@ import MyComponent from './components/customComponents/MyComponent';
 import LazyHome from './components/Lazy-Loading/LazyHome';
 import { BrowserRouter } from 'react-router-dom';
 import TodoHome from './components/machine-coding/Todo-App/TodoHome';
-import HomeTodo from './components/machine-coding/Todo-Practice/HomeTodo';
+
+import CounterOperation from './components/machine-coding/Couter/CounterOperation';
+import FormValidation from './components/machine-coding/Form-Validation/FormValidation';
 
 
 function App() {
@@ -31,7 +33,8 @@ function App() {
      </BrowserRouter>
       */   }
       {/*  <TodoHome /> */}
-      <HomeTodo />
+     {/* CounterOperation <CounterOperation /> */}
+     <FormValidation />
 
     </>
   )
